@@ -1,6 +1,7 @@
-import './styles.css';
+ import './styles.css';
+ 
+ function MyApp({ Component, pageProps }) {
 
-function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 

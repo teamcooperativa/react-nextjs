@@ -1,3 +1,30 @@
 .container {
-  color: red;
+  border-collapse: collapse;
+  margin: 5% 0% 0% 25%;
+  font-size: 16px;
+  width: 500px;
+  font-family: Arial;
+}
+
+.container th {
+  text-align: left;
+  color: gray;
+  font-size: 10px;
+  text-align: center;
+  border-top: 2px solid #dddddd;
+  border-bottom: 2px solid #dddddd;
+}
+
+.container td {
+  height: 50px;
+  text-align: center;
+  
+}
+
+.tablita {
+  border-bottom: 1px solid #dddddd;
+  border-left: 5px solid rgb(163, 216, 163);
+  font-weight: bold;
+  text-align: left;
+  
 }

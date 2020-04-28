@@ -1,5 +1,11 @@
+import Row from "./Component/Row"
 export default function Home() {
+  
   return (
-    <div className='container'>TABLE</div>
+  <div>
+    <Row />
+  </div>
   );
 }
+
+// Ivan
