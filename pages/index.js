@@ -1,9 +1,10 @@
-import Row from "./Component/Row"
+import Table from "./Component/Table/Table"
 export default function Home() {
   
   return (
-  <div>
-    <Row />
+  <div className="tablecontainer">
+    <h4><br/>All</h4>
+    <Table />
   </div>
   );
 }
