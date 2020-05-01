@@ -1,3 +1,8 @@
 .container {
   color: red;
+  font-family: Verdana, Geneva, sans-serif;   
+}
+
+.title {
+  color: gray;
 }
