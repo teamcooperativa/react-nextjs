@@ -1,31 +1,11 @@
-import Row from "./Row/Row"
-import {useState} from "react"
-
-const dataArr = [
-    {
-      id: 1, 
-      title: "lesson 1", 
-      date: "2020-04-21T15:52:14.565Z",
-      status: ""
-    },
-    {
-      id: 2, 
-      title: "lesson 2", 
-      date: "2020-04-22T15:52:14.565Z",
-      status: ""
-    },
-    {
-      id: 3, 
-      title: "lesson 3", 
-      date: "2020-04-23T15:52:14.565Z",
-      status: ""
-    }
-  ];
+import React, { useState } from 'react';
+import Rows from './Rows';
+import dataJson from '../../../data.json';
 
 const Table = () => {
-  const[data, setData] = useState(dataArr)
-  return(    
-  <table className="container">
+  const [data, setData] = useState(dataJson.data);
+  return (    
+    <table className='container'>
       <thead>
         <tr>
           <th>Lesson Title</th>
@@ -35,9 +15,10 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        <Row data={data}/>
+        <Rows data={data}/>
       </tbody>
-  </table>);
-  }
+    </table>
+  );
+}
 
-  export default Table
+export default Table;
