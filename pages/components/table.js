@@ -43,7 +43,6 @@ class Table extends React.Component {
   render() {
     return (
       <div className="container">
-        <colgroup span="4" className="columns"></colgroup>
         <table>
           <thead>
           <tr>

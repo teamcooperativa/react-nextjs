@@ -5,33 +5,38 @@
 .title {
   color: gray;
   text-align: justify;
+  text-indent: 3em;
 }
 
 .item {
   text-justify: initial;
   text-align: justify;
+  text-indent: 3em;
 }
 
 table {
   width: 50%;
   border-collapse: collapse;
   empty-cells: show;
+  margin: auto;
 }
 
 td {
   height: 3em;
 }
 
-thead tr::before {
+/* thead tr::before {
   content: "";
-}
+} */
 
-tbody tr::before {
-  content: "|"; 
-  height: 3em;
+/* tbody tr::before { */
+  td:first-child::before {
+  content: ""; 
+  display: block;
+  position: static;
+  width: 3px;
+  height: 50px;
   background-color: green;
-  color: green;
-  padding: 0px;
 }
 
 th, td {
