@@ -11,6 +11,19 @@ body {
   text-align: left;
 }
 
+thead tr::before {
+  content:"";
+}
+
+tbody tr::before {
+  content: "";
+  display: block;
+  position: static;
+  width: 5px;
+  height: 50px;
+  background-color: #a8dbae;
+}
+
 .tablecontainer h4 {
   margin-left: 4%;
 }
@@ -39,8 +52,8 @@ body {
 }
 
 .row {
-  border-bottom: 1px solid #f3f3f3;
-  border-left: 5px solid rgb(163, 216, 163);
+  border-bottom: 1px solid #f3f3f3;;
+  /*border-left: 5px solid rgb(163, 216, 163);*/
   text-align: left;
   text-indent: 7%;
 }
