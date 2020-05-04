@@ -22,11 +22,14 @@ var lessons = [
 class Lessons extends React.Component {
   render() {
     return lessons.map((lesson) =>
-      <tr>
+    <tbody>
+      <tr key="{lesson.id}">
         <td className="item">{lesson.title}</td>
         <td className="item">{new Date(lesson.date).toDateString()}</td>
         <td className="item">{lesson.status}</td>
+        <td></td>
       </tr>
+    </tbody>
     );
   }
 }
@@ -39,15 +42,17 @@ class Table extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <colgroup span="4" className="columns"></colgroup>
         <table>
+          <thead>
           <tr>
             <th className="title">Lesson Title</th>
             <th className="title">Date</th>
             <th className="title">Status</th>
             <th className="title">Actions</th>
           </tr>
+          </thead>
           {this.renderLessons()}          
         </table>
       </div>

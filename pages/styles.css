@@ -1,8 +1,40 @@
 .container {
-  color: red;
-  font-family: Verdana, Geneva, sans-serif;   
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .title {
   color: gray;
+  text-align: justify;
+}
+
+.item {
+  text-justify: initial;
+  text-align: justify;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+td {
+  height: 3em;
+}
+
+thead tr::before {
+  content: "";
+}
+
+tbody tr::before {
+  content: "|"; 
+  height: 3em;
+  background-color: green;
+  color: green;
+  padding: 0px;
+}
+
+th, td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
