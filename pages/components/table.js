@@ -26,7 +26,7 @@ class Lessons extends React.Component {
         <tr key="{lesson.id}">
           <td className="item">{lesson.title}</td>
           <td className="item">{new Date(lesson.date).toDateString()}</td>
-          <td className="item">{lesson.status}</td>
+          <td className="item">{lesson.status || 'Draft'}</td>
           <td></td>
         </tr>
       </tbody>
