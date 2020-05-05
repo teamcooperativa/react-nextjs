@@ -1,3 +1,7 @@
+body {
+  background-color: #f3f3f3;
+}
+
 .container {
   font-family: Verdana, Geneva, sans-serif;
 }
@@ -13,8 +17,10 @@
 }
 
 table {
-  width: 50%;
+  background-color: white;
+  box-shadow: 1px 1px lightgray;
   border-collapse: collapse;
+  width: 50%;
   empty-cells: show;
   margin: auto;
 }
@@ -23,11 +29,6 @@ td {
   height: 3em;
 }
 
-/* thead tr::before {
-  content: "";
-} */
-
-/* tbody tr::before { */
 tbody td:first-child::before {
   content: ""; 
   display: block;
