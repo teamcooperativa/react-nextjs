@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Rows from './Rows';
-import dataJson from '../../../data.json';
+import dataJson from '../../data.json';
 
 const Table = () => {
   const [data, setData] = useState(dataJson.data);
