@@ -17,6 +17,31 @@ const Table = () => {
       <tbody>
         <Rows data={data}/>
       </tbody>
+      <style jsx>{
+      `.container {
+        border-collapse: collapse;
+        font-size: 16px;
+        width: 100%;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      th {
+        text-align: left;
+        color: gray;
+        font-size: 12px;
+        text-align: left;
+        border-top: 1px solid #f3f3f3;
+        border-bottom: 2px solid #f3f3f3;
+        text-indent: 7%;
+        height: 20px;
+      }
+
+      tr::before {
+        content:"";
+      }
+      `
+    }</style>
     </table>
   );
 }
