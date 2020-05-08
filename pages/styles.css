@@ -3,18 +3,16 @@ body {
 }
 
 #all {
-  font-weight: bold;
   text-indent: 3.5em;
   color: black;
   height: 40px;
   text-align: left;
 }
 
-
-
 .container {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 16px;
+  font-weight: bold;
   overflow-x: auto;
 }
 
