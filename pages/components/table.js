@@ -4,21 +4,18 @@ var lessons = [
     title: "lesson 1",
     date: "2020-04-21T15:52:14.565Z",
     status: "",
-    actions: ""
   },
   {
     id: 2,
     title: "lesson 2",
     date: "2020-04-22T15:52:14.565Z",
     status: "",
-    actions: ""
   },
   {
     id: 3,
     title: "lesson 3",
     date: "2020-04-23T15:52:14.565Z",
     status: "",
-    actions: ""
   }
 ]
 

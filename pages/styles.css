@@ -2,39 +2,8 @@ body {
   background-color: #f3f3f3;
 }
 
-#all {
-  text-indent: 3.5em;
-  color: black;
-  height: 40px;
-  text-align: left;
-}
-
-.container {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  overflow-x: auto;
-}
-
-th {
-  color: gray;
-  text-align: left;
-  text-indent: 3em;
-  width: 50px;
-  padding: 0.1em;
-}
-
-/* .item {
-  text-indent: 3em;
-} */
-
-td {
-  height: 3em;
-  text-indent: 3em;
-}
-
 table {
-  border-radius: 5px 5px;
+  border-radius: 10px 10px;
   background-color: white;
   border-collapse: collapse;
   width: 100%;
@@ -42,6 +11,23 @@ table {
   margin: auto;
 }
 
+th {
+  color: gray;
+  text-align: left;
+  width: 50px;
+  padding: 0.1em;
+}
+
+td {
+  height: 3em;
+}
+
+th, td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-indent: 3em;
+}
 
 tbody td:first-child::before {
   content: ""; 
@@ -54,8 +40,17 @@ tbody td:first-child::before {
   background-color: #c5e3ad;
 }
 
-th, td {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  white-space: nowrap;
+.container {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  overflow-x: auto;
+}
+
+#all {
+  text-indent: 3.5em;
+  color: black;
+  height: 40px;
+  text-align: left;
+  border-top: 1px solid white;
 }
