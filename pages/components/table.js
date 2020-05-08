@@ -19,13 +19,15 @@ var lessons = [
   }
 ]
 
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December']
+
 class Lessons extends React.Component {
   render() {
     return lessons.map((lesson) =>
       <tbody>
         <tr key="{lesson.id}">
           <td>{lesson.title}</td>
-          <td>{new Date(lesson.date).toDateString()}</td>
+          <td>{months[new Date(lesson.date).getMonth()]} {new Date(lesson.date).getDate()}, {new Date(lesson.date).getFullYear()}</td>
           <td>{lesson.status || 'Draft'}</td>
           <td></td>
         </tr>
