@@ -2,12 +2,19 @@ body {
   background-color: #f3f3f3;
 }
 
-thead h3 {
-  text-indent: 3.5em;  
+#all {
+  font-weight: bold;
+  text-indent: 3.5em;
+  color: black;
+  height: 40px;
+  text-align: left;
 }
+
+
 
 .container {
   font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
   overflow-x: auto;
 }
 
@@ -16,6 +23,7 @@ th {
   text-align: left;
   text-indent: 3em;
   width: 50px;
+  padding: 0.1em;
 }
 
 /* .item {
@@ -44,6 +52,7 @@ tbody td:first-child::before {
   width: 0.4em;
   height: 3.1em;
   margin-top: -1em;
+  margin-left: -0.1em;
   background-color: #c5e3ad;
 }
 
