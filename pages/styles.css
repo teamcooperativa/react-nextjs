@@ -8,37 +8,39 @@ thead h3 {
 
 .container {
   font-family: Verdana, Geneva, sans-serif;
+  overflow-x: auto;
 }
 
-.title {
+th {
   color: gray;
-  text-align: justify;
+  text-align: left;
   text-indent: 3em;
+  width: 50px;
 }
 
-.item {
+/* .item {
+  text-indent: 3em;
+} */
+
+td {
+  height: 3em;
   text-indent: 3em;
 }
 
 table {
   border-radius: 5px 5px;
   background-color: white;
-  box-shadow: 1px 1px lightgray;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
   empty-cells: show;
   margin: auto;
 }
 
-td {
-  height: 3em;
-}
 
 tbody td:first-child::before {
   content: ""; 
   display: block;
   position: absolute;
-  /* width: 4px; */
   width: 0.4em;
   height: 3.1em;
   margin-top: -1em;
@@ -48,4 +50,5 @@ tbody td:first-child::before {
 th, td {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  white-space: nowrap;
 }

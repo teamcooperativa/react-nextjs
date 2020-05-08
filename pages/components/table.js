@@ -24,9 +24,9 @@ class Lessons extends React.Component {
     return lessons.map((lesson) =>
       <tbody>
         <tr key="{lesson.id}">
-          <td className="item">{lesson.title}</td>
-          <td className="item">{new Date(lesson.date).toDateString()}</td>
-          <td className="item">{lesson.status || 'Draft'}</td>
+          <td>{lesson.title}</td>
+          <td>{new Date(lesson.date).toDateString()}</td>
+          <td>{lesson.status || 'Draft'}</td>
           <td></td>
         </tr>
       </tbody>
@@ -47,10 +47,10 @@ class Table extends React.Component {
           <thead>
             <h3>All</h3>
             <tr>
-              <th className="title">Lesson Title</th>
-              <th className="title">Date</th>
-              <th className="title">Status</th>
-              <th className="title">Actions</th>
+              <th>Lesson Title</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Actions</th>
             </tr>
           </thead>
           {this.renderLessons()}
