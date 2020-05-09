@@ -2,6 +2,7 @@ import Table from '../Component/Table';
 
 export default function Home() {
   return (
+  <body>
     <div className='tablecontainer'>
       <h4><br/>All</h4>
       <Table />
@@ -18,9 +19,14 @@ export default function Home() {
         .tablecontainer h4 {
           margin-left: 4%;
         }     
+
+        body {
+          background-color: #f3f3f3;
+        }
         `
       }
       </style>
     </div>
+  </body>
   );
 }
