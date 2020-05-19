@@ -22,14 +22,16 @@ var lessons = [
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 function Lessons() {
-  return lessons.map((lesson) =>
+  return (
     <tbody>
-      <tr key={lesson.id}>
-        <td key={lesson.title}>{lesson.title}</td>
-        <td key={lesson.date}>{months[new Date(lesson.date).getMonth()]} {new Date(lesson.date).getDate()}, {new Date(lesson.date).getFullYear()}</td>
-        <td key={lesson.status}>{lesson.status || 'Draft'}</td>
-        <td key={lesson.status}></td>
-      </tr>
+      {lessons.map((lesson) =>
+        <tr key={lesson.id}>
+          <td key={lesson.title}>{lesson.title}</td>
+          <td key={lesson.date}>{months[new Date(lesson.date).getMonth()]} {new Date(lesson.date).getDate()}, {new Date(lesson.date).getFullYear()}</td>
+          <td key={lesson.status}>{lesson.status || 'Draft'}</td>
+          <td key={lesson.status}></td>
+        </tr>
+      )}
     </tbody>
   );
 }
