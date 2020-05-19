@@ -1,23 +1,4 @@
-var lessons = [
-  {
-    id: 1,
-    title: "lesson 1",
-    date: "2020-04-21T15:52:14.565Z",
-    status: "",
-  },
-  {
-    id: 2,
-    title: "lesson 2",
-    date: "2020-04-22T15:52:14.565Z",
-    status: "",
-  },
-  {
-    id: 3,
-    title: "lesson 3",
-    date: "2020-04-23T15:52:14.565Z",
-    status: "",
-  }
-]
+import { lessons } from '../public/lessons.json'
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
