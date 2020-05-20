@@ -1,8 +1,10 @@
-import { lessons } from '../public/lessons.json'
+import { useState } from 'react';
+import { lessons } from '../public/lessons.json';
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 function Lessons() {
+  const [state, setState] = useState(lessons.lessons);
   return (
     <tbody>
       {lessons.map((lesson) =>
