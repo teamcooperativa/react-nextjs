@@ -1,5 +1,10 @@
+// import Table from "../../react-nextjs/table"
+import Table from "../components/table"
+
 export default function Home() {
   return (
-    <div className='container'>TABLE</div>
+    <div>
+      <Table />
+    </div>
   );
 }
