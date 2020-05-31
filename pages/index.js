@@ -1,5 +1,9 @@
+import Table from "../component/Table"
+
 export default function Home() {
   return (
-    <div className='container'>TABLE</div>
+    <div>
+      <Table />
+    </div>
   );
 }
