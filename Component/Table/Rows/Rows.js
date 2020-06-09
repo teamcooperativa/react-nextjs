@@ -1,14 +1,44 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 
+const options = ['Duplicate', 'Delete', 'Exit']
 const mon = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August','September','October','November','December']
 const Row = ({ data }) => {
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    data.map(el => 
-      <tr className='row' key={el.id}>
-        <td key={el.title}>{el.title}</td>
-        <td key={el.date}>{mon[new Date(el.date).getMonth()]} {new Date(el.date).getDate()}, {new Date(el.date).getFullYear()}</td>
-        <td key={el.status}>{el.status || 'Draft'}</td>
-        <td key={el.status}>Actions</td>
+     
+      <tr className='row'>
+        <td >{data.title}</td>
+        <td >{mon[new Date(data.date).getMonth()]} {new Date(data.date).getDate()}, {new Date(data.date).getFullYear()}</td>
+        <td >{data.status || 'Draft'}</td>
+        <td ><Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+        <FontAwesomeIcon icon={faEllipsisV} />
+      </Button>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose}>Duplicate</MenuItem>
+        <MenuItem onClick={handleClose}>Delete</MenuItem>
+        <MenuItem onClick={handleClose}>Exit</MenuItem>
+      </Menu></td>
         <style jsx>{`
           .row {
             border-bottom: 1px solid #f3f3f3;;
@@ -30,8 +60,7 @@ const Row = ({ data }) => {
           }
         `}</style>
       </tr>
-    )
-  );
-}
-
+    );
+  }
+  
 export default Row;

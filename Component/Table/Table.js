@@ -15,7 +15,10 @@ const Table = () => {
         </tr>
       </thead>
       <tbody>
-        <Rows data={data}/>
+        {data.map((el, i) => {
+          return (
+          <Rows key={i} data={el}/>)
+        })}
       </tbody>
       <style jsx>{
       `.container {
