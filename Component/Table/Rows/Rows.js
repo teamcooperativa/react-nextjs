@@ -36,7 +36,7 @@ const Row = ({ data }) => {
               >
               <MenuItem onClick={handleClose}>Duplicate</MenuItem>
               <MenuItem onClick={handleClose}>Delete</MenuItem>
-              <MenuItem onClick={handleClose}>Exit</MenuItem>
+              <MenuItem onClick={handleClose}>Edit</MenuItem>
             </Menu></td>
         <style jsx>{`
           .row {
