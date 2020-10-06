@@ -1,3 +1,37 @@
-.container {
-  color: red;
+body {
+    margin: 0;
+    background: #e4e4e4;
+}
+
+.ltitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: Arial;
+}
+
+.containerrl {
+    padding: 0;
+    left: 10px;    
+}
+
+.contwo {
+    display: flex;
+    flex-direction: column;
+}
+
+.containernewl {
+    margin-top: 80px;
+}
+
+.containernewl p {
+    font-size: 14px;
+}
+
+.containernewl button {
+    background-color: #140e6d;
+    color: white;
 }
